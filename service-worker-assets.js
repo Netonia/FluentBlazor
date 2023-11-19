@@ -41,7 +41,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-naQHELKrJKDI8B4XjQAVtYo1BKzADheqCGmG70TULDU=",
+      "hash": "sha256-6t48kvgZTUc30OzWR4c2loMKIsXu9DddnojPvHVMVo4=",
       "url": "FluentBlazor.styles.css"
     },
     {
@@ -77,19 +77,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-O7id4xjjaUKZ9WoRpluEfAKJnFeAHGfBHoWUoGM16lQ=",
+      "hash": "sha256-DU7YWUO+F8IY5TdGVLkG2stvse3MM6jgmRaDDAwGWRw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-9nZ7EBvXnW4hZmIquae+HQc1MKKVPb179xRs2lQ5O6o=",
+      "hash": "sha256-c43SMSjp69hIrcVJLG3g4d70Wr0yIuDzkhN3YpkhzqE=",
       "url": "_framework\/FluentBlazor.wasm"
     },
     {
-      "hash": "sha256-trohEPYrXpKkTY4+rb482iTSyVnfelU\/oUuxZmxwNtA=",
+      "hash": "sha256-8N18TWx20DIILrmmN6IBdUMhCUfHvmy0okWuToCyfm0=",
+      "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
+    },
+    {
+      "hash": "sha256-iHb3LrBWvhwwKCxkT325Ek2GJwNi6KlyR6\/BnUcoVXo=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
-      "hash": "sha256-x1l9FugwmzqFxwxkt3kOnovSq5wZENn7KUGUGxelDy4=",
+      "hash": "sha256-FRFZj9FsEl9rB9yF+Aq70AtBuDQbsAgqRW4FSLNxrT0=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.wasm"
     },
     {
@@ -133,7 +137,11 @@
       "url": "_framework\/Microsoft.Extensions.Primitives.wasm"
     },
     {
-      "hash": "sha256-mrTvGHqriv84w8mUbeBWEpTXQyAPSZPjJx6P\/9PFRbc=",
+      "hash": "sha256-Z9RBYQRCZveyOLcxDGz9fTgqscZ7CMZlJBxtFY+X2ok=",
+      "url": "_framework\/Microsoft.FluentUI.AspNetCore.Components.Icons.wasm"
+    },
+    {
+      "hash": "sha256-E6E1MPcvUNlP28\/38BQa3ZqrFF8n9R5QzgXiUseEhrg=",
       "url": "_framework\/Microsoft.FluentUI.AspNetCore.Components.wasm"
     },
     {
@@ -149,7 +157,7 @@
       "url": "_framework\/System.Collections.Concurrent.wasm"
     },
     {
-      "hash": "sha256-yY2Qhp5A3aEcktdZjjoE760FD4ihY+8z2c4qmwkSaU4=",
+      "hash": "sha256-5asVpXFvd0P6jKEYA8aZCbqMUzEcwgE4c0TY7nxzJhk=",
       "url": "_framework\/System.Collections.wasm"
     },
     {
@@ -185,7 +193,7 @@
       "url": "_framework\/System.Drawing.wasm"
     },
     {
-      "hash": "sha256-xftZOYVJwxbNG78dzRvOxjj6rPsG96zo5UBNE1UQk1E=",
+      "hash": "sha256-T2za99jj0YXcTZ2Y+WbuE1pZhBERVzIYpVLbkpMkIQA=",
       "url": "_framework\/System.Linq.Expressions.wasm"
     },
     {
@@ -197,7 +205,7 @@
       "url": "_framework\/System.Linq.wasm"
     },
     {
-      "hash": "sha256-HxWkz7UwBh05wS2ZYKqwyRZs+fF4nOMIesDJVcSZKoQ=",
+      "hash": "sha256-hkth6YS6UnK33Aewp8zIVYMCzEDYAnu0rL6ER05D+qw=",
       "url": "_framework\/System.Memory.wasm"
     },
     {
@@ -205,7 +213,7 @@
       "url": "_framework\/System.Net.Http.Json.wasm"
     },
     {
-      "hash": "sha256-3Yoy6nd7hgMe4ADCN0\/Y12CcttQLyz\/UAmIAUcZUg2o=",
+      "hash": "sha256-7kqrPZwjHmOUtN\/f+YG5vXLq9N86W5gaP1wVzyUDPZk=",
       "url": "_framework\/System.Net.Http.wasm"
     },
     {
@@ -217,11 +225,11 @@
       "url": "_framework\/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-2g0sp9IXQDAF6pyBlq\/UjGKPDyRzYmyo5fWVvtWyyDE=",
+      "hash": "sha256-bgbEW5dZUeMzDbLoWoI8FhuC8\/b1U4mjaS20vSmCuWg=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
-      "hash": "sha256-mwohagRUm7CeT2a1\/nBV\/UzRFUFRpyPUKQgdiji0RK0=",
+      "hash": "sha256-SnVf6JISpZFZyz+AfMlbtgx6haD5hUpPbNemWOAuYTI=",
       "url": "_framework\/System.Private.Uri.wasm"
     },
     {
@@ -229,7 +237,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm"
     },
     {
-      "hash": "sha256-R0Z8nDqfIQfrzzmmExu\/ma6j\/HzjhmYdpc50c+0r1F0=",
+      "hash": "sha256-zxAhvk+7ppNpiTZNgQKD0lUdJu\/pL4N+Q2xL6TwkhuI=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -237,11 +245,11 @@
       "url": "_framework\/System.Text.Encodings.Web.wasm"
     },
     {
-      "hash": "sha256-BlomKFiVy5u\/OYoaNB+udLfOXrKY2iZGnN7zoqxUoso=",
+      "hash": "sha256-EpHsMIm3qAKX+2WA1F2Iq83PvYMS4yOFnTyH2isG89k=",
       "url": "_framework\/System.Text.Json.wasm"
     },
     {
-      "hash": "sha256-3TnJ+gFbcLQWd64dQi9CTds871jRDrawlfFObiJJADY=",
+      "hash": "sha256-xJSBjH0aVS7pwrglxW2XoDw4hkF+OB3AX\/XxRSA7+x8=",
       "url": "_framework\/System.Text.RegularExpressions.wasm"
     },
     {
@@ -325,5 +333,5 @@
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Microsoft.FluentUI.AspNetCore.Components.lib.module.js"
     }
   ],
-  "version": "Sa2e7tXO"
+  "version": "KlpQ+reE"
 };
