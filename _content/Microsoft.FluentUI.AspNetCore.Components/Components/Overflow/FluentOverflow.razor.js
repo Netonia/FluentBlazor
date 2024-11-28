@@ -1,34 +1,90 @@
-﻿export function FluentOverflowInitialize(dotNetHelper, id, isHorizontal, querySelector) {
+let resizeObserver;
+let observerAddRemove;
+let lastHandledState = { id: null, isHorizontal: null };
+export function fluentOverflowInitialize(dotNetHelper, id, isHorizontal, querySelector, threshold) {
+    var localSelector = querySelector;
+    if (!localSelector) {
+        // cannot use :scope for node.matches() further down
+        localSelector = ".fluent-overflow-item";
+    }
+
+    // Create a Add/Remove Observer, started later
+    observerAddRemove = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+
+            // Only new node (type=childList)
+            if (mutation.type !== 'childList' && (mutation.addedNodes.length > 0 || mutation.removedNodes.length > 0)) {
+                return
+            }
+
+            // Only for localSelector element
+            const node = mutation.addedNodes.length > 0 ? mutation.addedNodes[0] : mutation.removedNodes[0];
+            if (node.nodeType !== Node.ELEMENT_NODE || !node.matches(localSelector)) {
+                return;
+            }
+
+            fluentOverflowRefresh(dotNetHelper, id, isHorizontal, querySelector, threshold);
+        });
+    });
+    var el = document.getElementById(id);
+
+    // Stop the resize observation if the element is already observed
+    if (resizeObserver && el) {
+        resizeObserver.unobserve(el);
+    }
+
+    let resizeTimeout;
+    resizeObserver = new ResizeObserver((entries) => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            fluentOverflowRefresh(dotNetHelper, id, isHorizontal, querySelector, threshold);
+        }, 100); // Adjust the timeout as needed
+    });
 
     // Create a ResizeObserver, started later
-    const resizeObserver = new ResizeObserver((entries) => {
-        FluentOverflowResized(dotNetHelper, id, isHorizontal, querySelector);
+    resizeObserver = new ResizeObserver((entries) => {
+        fluentOverflowRefresh(dotNetHelper, id, isHorizontal, querySelector, threshold);
     });
 
     // Start the resize observation
-    var el = document.getElementById(id);
     if (el) {
         resizeObserver.observe(el);
-    }    
+        observerAddRemove.observe(el, { childList: true, subtree: false });
+    }
+
+    lastHandledState.id = id;
+    lastHandledState.isHorizontal = isHorizontal;
 }
 
 // When the Element[id] is resized, set overflow attribute to all element outside of this element.
 // Except for elements with fixed attribute.
-export function FluentOverflowResized(dotNetHelper, id, isHorizontal, querySelector) {
-    let container = document.getElementById(id);                                  // Container
+export function fluentOverflowRefresh(dotNetHelper, id, isHorizontal, querySelector, threshold) {
+    let container = document.getElementById(id);
     if (!container) return;
 
     if (!querySelector) {
-        querySelector = ":scope > *";
+        querySelector = ":scope .fluent-overflow-item";
     }
-
-    let items = container.querySelectorAll(querySelector + ":not([fixed])");      // List of first level element of this container                        
-    let fixedItems = container.querySelectorAll(querySelector + "[fixed]");       // List of element defined as fixed (not "overflowdable")
-    let itemsTotalSize = 10;
+    else {
+        querySelector = ":scope >" + querySelector;
+    }
+    let allItems = container.querySelectorAll(querySelector);
+    let items = container.querySelectorAll(querySelector + ":not([fixed])");      // List of first level element of this container
+    let fixedItems = container.querySelectorAll(querySelector + "[fixed]");       // List of element defined as fixed (not "overflowable")
+    let itemsTotalSize = threshold > 0 ? 10 : 0;
     let containerMaxSize = isHorizontal ? container.offsetWidth : container.offsetHeight;
     let overflowChanged = false;
     let containerGap = parseFloat(window.getComputedStyle(container).gap);
     if (!containerGap) containerGap = 0;
+
+    containerMaxSize -= threshold; // Account for the overflow bage width
+
+    if (lastHandledState.id === id && lastHandledState.isHorizontal !== isHorizontal) {
+        allItems.forEach(element => {
+            element.removeAttribute("overflow");
+            element.overflowSize = null;
+        });
+    }
 
     // Size of all fixed elements
     fixedItems.forEach(element => {
@@ -50,19 +106,21 @@ export function FluentOverflowResized(dotNetHelper, id, isHorizontal, querySelec
 
         itemsTotalSize += element.overflowSize;
 
-        // Add an attribute 'overflow'
-        if (itemsTotalSize > containerMaxSize) {
-            if (!isOverflow) {
-                element.setAttribute("overflow", "");
-                overflowChanged = true;
+        // Only check for overflow if the container has a size
+        if (containerMaxSize > 0) {
+            if (itemsTotalSize > containerMaxSize) {
+                // Add an attribute 'overflow'
+                if (!isOverflow) {
+                    element.setAttribute("overflow", "");
+                    overflowChanged = true;
+                }
             }
-        }
-
-        // Remove the attribute 'overflow'
-        else {
-            if (isOverflow) {
-                element.removeAttribute("overflow");
-                overflowChanged = true;
+            else {
+                // Remove the attribute 'overflow'
+                if (isOverflow) {
+                    element.removeAttribute("overflow");
+                    overflowChanged = true;
+                }
             }
         }
 
@@ -76,10 +134,20 @@ export function FluentOverflowResized(dotNetHelper, id, isHorizontal, querySelec
             listOfOverflow.push({
                 Id: element.id,
                 Overflow: element.hasAttribute("overflow"),
-                Text: element.innerText
+                Text: element.innerText.trim()
             });
         });
         dotNetHelper.invokeMethodAsync("OverflowRaisedAsync", JSON.stringify(listOfOverflow));
+    }
+    lastHandledState.id = id;
+    lastHandledState.isHorizontal = isHorizontal;
+}
+
+export function fluentOverflowDispose(id) {
+    let el = document.getElementById(id);
+    if (el) {
+        resizeObserver.unobserve(el);
+        observerAddRemove.disconnect();
     }
 }
 
