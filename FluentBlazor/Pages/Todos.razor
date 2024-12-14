@@ -21,7 +21,7 @@
             {
                 <li>
                     <FluentButton OnClick="@(() => RemoveTodo(todo))">
-                        <FluentIcon Value="@(new Icons.Regular.Size16.Delete())" Color="Color.Error" Slot="start" />
+                        <FluentIcon Value="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size16.Delete())" Color="Color.Error" Slot="start" />
                     </FluentButton>
                     <FluentCheckbox type="checkbox" @bind-Value="todo.IsComplete" />
                     <span style="@((todo.IsComplete) ? "text-decoration: line-through" : "")">@todo.Title</span>
