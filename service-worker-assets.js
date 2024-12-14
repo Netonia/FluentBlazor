@@ -41,7 +41,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-qFt3G3zASpmQcMaZsCglNp2l9YoEA3hLKNg257yn\/As=",
+      "hash": "sha256-ozZqSKHoFNg3mAXnSZxEyhJRm4++0p3Llo4vuDzzAbk=",
       "url": "FluentBlazor.styles.css"
     },
     {
@@ -77,11 +77,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-ttND+1K0lz7jRaJLHQT2EjwqhrBFkQyXvPtsNLrbJLU=",
+      "hash": "sha256-Qc2yv2NUfG28v9gb7t0DMYC+WhEOqtGizOficLjZD+M=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-L+VXN1sehthUUtkostZCPz8PH2u+2tbs+grEOniZhzA=",
+      "hash": "sha256-O99\/NdZoHuDbYWgdVN3s8mkVJv1P1iiPshEjthbtlKE=",
       "url": "_framework\/FluentBlazor.wasm"
     },
     {
@@ -89,7 +89,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
     },
     {
-      "hash": "sha256-DnbfZghPziyGMPFH\/We3c8W7ietNkYNeYMktBqmlgx4=",
+      "hash": "sha256-RyMw\/JBFpQF0cSt6LCHoPglwNWd4js+Dwcr2FKgaRR4=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -137,11 +137,11 @@
       "url": "_framework\/Microsoft.Extensions.Primitives.wasm"
     },
     {
-      "hash": "sha256-EJ9CYdEf\/3Rz99XI9QviIOo0YLsxuuWPRKDdeeCwQHk=",
-      "url": "_framework\/Microsoft.FluentUI.AspNetCore.Components.Icons.wasm"
+      "hash": "sha256-rKSGk844D8hhgeLItsbqs6dSvz+mX4xUspoGjNzWUTU=",
+      "url": "_framework\/Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.wasm"
     },
     {
-      "hash": "sha256-iNVZe8WCz4P9\/DBpdjJW5CiCbn40J6HOwaDQ9i89sbw=",
+      "hash": "sha256-FTGeWnwJk3bhh2dfA8\/7JacQWqFwwfrN7p\/dTkpOhJY=",
       "url": "_framework\/Microsoft.FluentUI.AspNetCore.Components.wasm"
     },
     {
@@ -155,6 +155,10 @@
     {
       "hash": "sha256-bKAouDiif493TPIannjxMg25BM5xtUaTr6zMEJWYvlk=",
       "url": "_framework\/System.Collections.Concurrent.wasm"
+    },
+    {
+      "hash": "sha256-KZDiT5a48j9mTGWrXWbeU9LKfrlts7MF9GC6A9h+ZAc=",
+      "url": "_framework\/System.Collections.Specialized.wasm"
     },
     {
       "hash": "sha256-pAVavfANLpQDby\/CKNpLL7jX5CGkf2RoUd5RuN+QUao=",
@@ -177,7 +181,7 @@
       "url": "_framework\/System.ComponentModel.wasm"
     },
     {
-      "hash": "sha256-p7QmN0oZAPMxGCCS+x4DCyXMv2kFfaZBYjflGXIkv24=",
+      "hash": "sha256-ogsPkc+867o1fQaAZWDJ6k0ZMvI509dfB\/AtK22Yja0=",
       "url": "_framework\/System.Console.wasm"
     },
     {
@@ -201,7 +205,7 @@
       "url": "_framework\/System.Linq.Queryable.wasm"
     },
     {
-      "hash": "sha256-+klgJhwRGkQX3DiqNui+Q+xsoE29v8UtHiK\/R+8FBkM=",
+      "hash": "sha256-WxdIslIdemK17iLJaQDeY4QGCJJEFEIcBum8t3gvRSQ=",
       "url": "_framework\/System.Linq.wasm"
     },
     {
@@ -225,11 +229,11 @@
       "url": "_framework\/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-gMEDjCpd1zol4BNe6l4NNooIlYENQsE7DwOQHXZlZJs=",
+      "hash": "sha256-9oIJUeJZnh2HOU1wWlT47VU+DkcSWqSdRtl+gb6fuIQ=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
-      "hash": "sha256-MYbKCpM0evHZ4yoiPs3EG\/9L\/0QgdSR\/SsSqj5s34Rk=",
+      "hash": "sha256-B7IYoB1eHGmoJttijKCtJOxMSiYiSTklxD25pvEfdHM=",
       "url": "_framework\/System.Private.Uri.wasm"
     },
     {
@@ -257,11 +261,15 @@
       "url": "_framework\/System.wasm"
     },
     {
+      "hash": "sha256-S3VX7mVMV6UU2oThxlP1HhnkGCpDm+kcC\/XeXF0bBWQ=",
+      "url": "_framework\/System.Web.HttpUtility.wasm"
+    },
+    {
       "hash": "sha256-b9RSPukLvSHekr3kftcukF9Hbr4g1a5l0\/cfyJ61XMA=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/Anchor\/FluentAnchor.razor.js"
     },
     {
-      "hash": "sha256-em7H1x6ijv\/Ln1xS18rdjLu1JRbd3KqLfbEg9v+9Ot8=",
+      "hash": "sha256-RC8P8iQcUu\/cx7osATv0xSw2X8G3utkMtThwigsND5g=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/AnchoredRegion\/FluentAnchoredRegion.razor.js"
     },
     {
@@ -273,11 +281,11 @@
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/Checkbox\/FluentCheckbox.razor.js"
     },
     {
-      "hash": "sha256-YXK\/HpBHSdAvYKGx6FxD4KNnfqJyfeRndjuw0HB6lAM=",
+      "hash": "sha256-VTVI\/re1ApVcgtRkW\/BCIm\/PIfVM3iBZEQcVZzuTARo=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/DataGrid\/FluentDataGrid.razor.js"
     },
     {
-      "hash": "sha256-Ev4Kojt6pIRpgo1en7WTdMnGAI6m6iD4kfsPNHe5dzE=",
+      "hash": "sha256-abaSp2xCB2qa0FHuc\/9VKt39+MybEnIoOItPufNTSr4=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/DesignSystemProvider\/FluentDesignTheme.razor.js"
     },
     {
@@ -293,7 +301,7 @@
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/HorizontalScroll\/FluentHorizontalScroll.razor.js"
     },
     {
-      "hash": "sha256-PP\/sd+\/TmUOGcOlWecN29U8NiuDIEWAdn05aDunSL8Q=",
+      "hash": "sha256-jVUx4bPTalHIvOojctUJSv1VI7lHAUHHohPRD5KIig4=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Components\/InputFile\/FluentInputFile.razor.js"
     },
     {
@@ -385,17 +393,17 @@
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Microsoft.FluentUI.AspNetCore.Components.lib.module.js.LEGAL.txt"
     },
     {
-      "hash": "sha256-4SNdvLM7SDhaju7Ir+uYFq6\/+6PwZqn7sQPCIe+nI0g=",
+      "hash": "sha256-VHCb\/U7GL6QVbx5psaGUdfmCzhTRPWRUuIbJLkEigYo=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Microsoft.FluentUI.AspNetCore.Components.lib.module.js.map"
     },
     {
-      "hash": "sha256-s8i9htPaAt7ZBCd4Nd0wqrNPZB5+37bPZH72pf5wd9o=",
-      "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Microsoft.FluentUI.AspNetCore.Components.dwk6czdzfo.bundle.scp.css"
+      "hash": "sha256-YztyWdRzOZhUadE\/VIimm3lqqrIc68XqJIgrPbB6Z84=",
+      "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Microsoft.FluentUI.AspNetCore.Components.fdgqanm4uu.bundle.scp.css"
     },
     {
-      "hash": "sha256-\/LPTy2KpNBBYdj9b6lNMDILfmbdqo+FWKCFS6WQd0mU=",
+      "hash": "sha256-htNuF2gbem5vP85zcYVih92CTJrIeZj4ghrN\/AHd9VM=",
       "url": "_content\/Microsoft.FluentUI.AspNetCore.Components\/Microsoft.FluentUI.AspNetCore.Components.lib.module.js"
     }
   ],
-  "version": "qRgYMCKW"
+  "version": "72pNuQ\/8"
 };
